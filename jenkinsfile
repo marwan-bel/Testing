@@ -1,0 +1,23 @@
+pipeline {
+  agent any
+  environment{
+      gitHome = tool 'myGit'
+      dockerHome = tool 'myDocker'
+      mavenHome = tool 'myMaven'
+      PATH= "$dockerHome/bin:$mavenHome/bin:$gitHome/bin:$PATH"
+  }
+  stages {
+    stage('Checkout Scm') {
+      steps {
+        git 'https://github.com/marwan-bel/Testing'
+      }
+    }
+
+    stage('Shell script 0') {
+      steps {
+        sh 'mvn clean compile'
+      }
+    }
+
+  }
+}
