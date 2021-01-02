@@ -3,6 +3,7 @@ pipeline {
       tools {         // Install the Maven version configured as "M3" and add it to the path.    
            maven "myMaven"  
            git  "myGit"
+           
              
             }
  
@@ -17,6 +18,7 @@ pipeline {
       steps {
         sh 'mvn clean compile'
 	      sh 'mvn -v'
+        sh 'mvn -v'
 
       }
     }
