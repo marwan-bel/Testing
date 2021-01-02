@@ -11,4 +11,4 @@ https://medium.com/@Raghwendra.sonu/web-automation-with-selenium-cucumber-maven-
 In this project repository, we are designing a Web Automation framework with Selenium, Cucumber, Maven, and TestNG using Page Object Model in Java.
 
 For details, you can have a look at my above published article. Let me know if this was helpful. If you ever need my help, you can contact me through my LinkedIn Profile.
-https://au.linkedin.com/in/raghwendra-sonu
+
